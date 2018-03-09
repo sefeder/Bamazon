@@ -22,7 +22,7 @@ connection.connect(function (err) {
 });
 
 function start() {
-    console.log('\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\nWelcome to Bamazon Manager View\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n'.blue)
+    console.log('\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-'.yellow+'\nWelcome to Bamazon Manager View'.blue+'\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n'.yellow)
     inquirer.prompt([
         {
             name: "managerSelect",
@@ -78,7 +78,7 @@ function viewInventory() {
         if (err) throw err
 
         if (res[0] === undefined) {
-            console.log("\nLooks like you're in good shape! You don't have any products with an inventory lower than 5!\n".green);
+            console.log("\nLooks like you're in good shape! You don't have any products with a stock quantity less than 5!\n".green);
             inquirer.prompt([
                 {
                     name: "anythingElse",
@@ -96,7 +96,7 @@ function viewInventory() {
             })
                     
         } else {
-            console.log("\n You'll need to restock these products soon:\n");
+            console.log("\n     You'll need to restock these products soon (they have a stock quantity lower than 5):\n".yellow);
             console.table(res);
             console.log("");
             inquirer.prompt([
@@ -128,7 +128,7 @@ function restockInventory() {
                 type: "list",
                 choices: function () {
                     for (var i = 0; i < results.length; i++) {
-                        choiceArray.push(results[i].product_name + " | " + results[i].stock_quantity);
+                        choiceArray.push(results[i].product_name + " | " + "Current stock quantity: " + results[i].stock_quantity);
                     }
                     return choiceArray;
 
@@ -140,7 +140,7 @@ function restockInventory() {
         .then(function (answer) {
             var chosenItem;
             for (var i = 0; i < results.length; i++) {
-                if (choiceArray.indexOf(answer.productSelect) + 1 === results[i].item_id) {
+                if (choiceArray.indexOf(answer.productSelect) === i) {
                     chosenItem = results[i];
                 }
             }

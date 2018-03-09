@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS bamazon_db;
 CREATE DATABASE bamazon_db;
 
 USE bamazon_db;
@@ -6,37 +7,37 @@ CREATE TABLE products(
   item_id INT NOT NULL AUTO_INCREMENT,
   product_name  VARCHAR(100) NOT NULL,
   department_name VARCHAR(45) NOT NULL,
-  price INT,
+  price DEC(4,2),
   stock_quantity INT,
   PRIMARY KEY (item_id)
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product1", "dept1", 20, 15);
+VALUES ("Bananas", "Grocery", 0.65, 100);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product2", "dept1", 5, 20);
+VALUES ("Apples", "Grocery", 1.10, 100);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product3", "dept1", 10, 25);
+VALUES ("Sweatshirts", "Clothing", 24.99, 40);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product4", "dept2", 25, 100);
+VALUES ("T-Shirts", "Clothing", 19.99, 50);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product5", "dept2", 25, 40);
+VALUES ("Sunglasses", "Accesories", 15.50, 25);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product6", "dept2", 20, 60);
+VALUES ("Milk", "Grocery", 2.65, 30);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product7", "dept2", 200, 80);
+VALUES ("Shampoo", "Cosmetics", 9.95, 20);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product8", "dept3", 12, 45);
+VALUES ("Body Wash", "Cosmetics", 8.50, 30);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product9", "dept3", 25, 15);
+VALUES ("Advil", "Pharmecy", 19.99, 35);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("product10", "dept3", 40, 10);
+VALUES ("DayQuil", "Pharmecy", 15.50, 20);
