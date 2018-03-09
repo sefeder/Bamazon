@@ -16,7 +16,7 @@ The Customer View allows the user to see a list of products and their prices, se
 
 
 
-###GIFs
+### GIFs
 
 * Customer View
 
@@ -30,7 +30,7 @@ The Customer View allows the user to see a list of products and their prices, se
 
 
 
-###Technology Used
+### Technology Used
 * JavaScript
 * node.JS
 * npm
