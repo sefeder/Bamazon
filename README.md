@@ -14,20 +14,27 @@ The Customer View allows the user to see a list of products and their prices, se
 ![Screenshot of Bamazon](images/BamazonScreenShot.png)
 
 
+
+
 ###GIFs
 
 * Customer View
+
 ![Customer View GIF](images/Customer.gif)
 
 * Manager View
+
+
 ![Manager View GIF](images/Manager.gif)
 
 
+
+
 ###Technology Used
-JavaScript,
-node.JS,
-npm,
-MySQL
+* JavaScript
+* node.JS
+* npm
+* MySQL
 
 ### Future Versions
 In future versions of the app, I would like to add a Supervisor View that can log the profit coming from each different department and other things like that.
