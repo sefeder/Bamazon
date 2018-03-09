@@ -5,7 +5,7 @@
 This is an interactive command line department store app with two sections. 
 
 ### How it Works
-The Customer View allows the user to see a list of products and their prices, select a product and make a purchase. The Manager View gives the user a menu of managerial options such as viewing items with low inventory, restocking those items, as well as an option to add new products to sell.
+Running the bamazonCustomer.js file creates the Customer View which allows the user to see a list of products and their prices, select a product, and make a purchase. Running the bamazonManager.js file creates the Manager View  which gives the user a menu of managerial options such as viewing items with low inventory, restocking those items, as well as an option to add new products to sell.
 
 ### Links
 * Github Repo:  https://github.com/sefeder/Bamazon
