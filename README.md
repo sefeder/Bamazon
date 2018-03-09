@@ -15,9 +15,11 @@ The Customer View allows the user to see a list of products and their prices, se
 ![Screenshot of Bamazon](images/BamazonScreenShot.png)
 
 ###Customer View
+
 ![Customer View GIF](images/Customer.gif)
 
 ###Manager View
+
 ![Manager View GIF](images/Manager.gif)
 
 ###Technology Used
